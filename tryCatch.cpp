@@ -27,9 +27,7 @@ using namespace std;
 int main(){
     string S;
     cin >> S;
-    int n = 0;
-    
-    
+    int n = 0;        
     
     try {
         n = stoi(S);
@@ -40,12 +38,6 @@ int main(){
         
         cout << "Bad String";   
     }
-    
-    
-   
-    
-    
-    
-    
+
     return 0;
 }
