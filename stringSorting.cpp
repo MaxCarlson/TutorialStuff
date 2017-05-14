@@ -53,3 +53,36 @@ int commonCharacterCount(std::string s1, std::string s2) {
 return counter;   
  
 }
+
+bool isLucky(int n) {
+    
+    string number = to_string(n);
+    
+    int len = number.size();
+   
+    len /= 2;
+    
+    string first (number.begin(), number.begin() +len);
+    string second (number, len, len);
+
+    char a;
+    int sum = 0, sum1 = 0, b;
+    
+    for(int i = 0; i < len; i++){
+        a = first[i];
+        b = a - '0';
+        sum += b;
+    }
+    
+    for(int i = 0; i < len; i++){
+        a = second[i];
+        b = a - '0';
+        sum1 += b;
+    }
+    
+    if(sum == sum1){
+        return true;
+    }
+    return false;
+  
+}
