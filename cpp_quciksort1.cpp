@@ -16,7 +16,7 @@
 #include <algorithm>
 using namespace std;
 void partition(vector <int>  ar) {
-   // Enter code for partitioning and printing here. 
+   //Partition and print 
     int equal = ar[0], equalT = 0;    
     vector <int> right, left;
     
